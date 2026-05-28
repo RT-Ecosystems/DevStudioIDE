@@ -111,5 +111,20 @@
             android:text="Build"
             android:textColor="@color/black"
             android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/gray"
+            android:alpha="0.3" />
+
+        <Button
+            android:id="@+id/btnWebToApk"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web→APK"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
     </LinearLayout>
 </LinearLayout>

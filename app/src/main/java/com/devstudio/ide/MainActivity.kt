@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.devstudio.ide.filemanager.FileAdapter
 import com.devstudio.ide.filemanager.FileItem
 import com.devstudio.ide.filemanager.FileManagerActivity
+import com.devstudio.ide.webtoapp.WebToApkActivity
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -52,6 +53,10 @@ class MainActivity : AppCompatActivity() {
         // FIX: Build button placeholder
         findViewById<Button>(R.id.btnBuild).setOnClickListener {
             Toast.makeText(this, "Build feature coming in next update!", Toast.LENGTH_SHORT).show()
+        }
+
+        findViewById<Button>(R.id.btnWebToApk).setOnClickListener {
+            startActivity(Intent(this, WebToApkActivity::class.java))
         }
 
         checkPermissionsAndLoad()
