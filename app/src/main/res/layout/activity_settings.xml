@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/btnSettingsBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:tint="#000000"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingStart="8dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Font Size -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDITOR"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Font Size"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+
+            <SeekBar
+                android:id="@+id/sbFontSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvFontSizePreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14sp"
+                android:textColor="#757575"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#E0E0E0" android:layout_marginVertical="12dp"/>
+
+            <!-- Word Wrap -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Word Wrap"
+                    android:textSize="15sp"
+                    android:textColor="#000000" />
+                <Switch
+                    android:id="@+id/swWordWrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#E0E0E0" android:layout_marginVertical="12dp"/>
+
+            <!-- Line Numbers -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Line Numbers"
+                    android:textSize="15sp"
+                    android:textColor="#000000" />
+                <Switch
+                    android:id="@+id/swLineNumbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#E0E0E0" android:layout_marginVertical="12dp"/>
+
+            <!-- Auto Save -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Auto Save"
+                    android:textSize="15sp"
+                    android:textColor="#000000" />
+                <Switch
+                    android:id="@+id/swAutoSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#E0E0E0" android:layout_marginVertical="12dp"/>
+
+            <!-- Theme -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APPEARANCE"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editor Theme"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

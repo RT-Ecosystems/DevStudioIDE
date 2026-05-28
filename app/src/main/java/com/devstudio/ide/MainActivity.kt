@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.devstudio.ide.filemanager.FileAdapter
 import com.devstudio.ide.filemanager.FileItem
 import com.devstudio.ide.filemanager.FileManagerActivity
+import com.devstudio.ide.settings.SettingsActivity
 import com.devstudio.ide.webtoapp.WebToApkActivity
 import java.io.File
 
@@ -57,6 +58,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnWebToApk).setOnClickListener {
             startActivity(Intent(this, WebToApkActivity::class.java))
+        }
+
+        findViewById<android.widget.ImageView>(R.id.btnSettings).setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
 
         checkPermissionsAndLoad()
