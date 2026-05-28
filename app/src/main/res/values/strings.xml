@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dev Studio IDE</string>
+    <string name="new_project">New Project</string>
+    <string name="open">Open</string>
+    <string name="build">Build</string>
+    <string name="save">Save</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+</resources>
